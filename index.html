@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth ">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,27 +14,26 @@
 <body>
 
   <!-- Navbar -->
-  <header class="bg-white w-full h-16 fixed shadow-md -top-0.5 px-6 py-2 flex items-center justify-between z-50">
+  <header class="bg-white dark:bg-slate-700 w-full h-16 fixed shadow-md top-0 px-6 py-2 flex items-center justify-between z-50 md:px-20">
     <!-- title -->
     <img src="dist/img/logo-mini.png" class="w-14" alt="logo-mini">
     <!-- hamburger -->
-    <button class="hover:bg-slate-200 active:ring-4 active:ring-slate-300 rounded-lg py-1 px-2">
-      <i class="fa-solid fa-bars text-2xl mt-1"></i>
+    <button id="hamburger" class="md:invisible dark:text-white fa-solid text-lg fa-bars hover:bg-slate-200 dark:hover:bg-slate-800 active:ring-4 active:ring-slate-300 dark:active:ring-slate-900 rounded-lg py-2 px-2">
     </button>
     <!-- menus -->
-    <nav id="menu" class="bg-white hidden absolute left-0 top-14 w-[350px] rounded-lg m-5 shadow-lg first-line:transition-all duration-300 ease-in-out">
-      <ul class="flex flex-col justify-center">
-        <li class="text-lg text-center p-5 shadow-sm">
-          <a href="#home" class="hover:text-blue-500 text-slate-400 font-medium">Home</a>
+    <nav id="menu" class="bg-white dark:bg-slate-800 absolute menu-unactive md:right-16 md:-top-1 top-14 w-[350px] md:w-1/2 md:bg-transparent md:dark:bg-transparent md:dark:shadow-none md:shadow-none rounded-lg m-5 shadow-lg dark:shadow-md shadow-slate-300 dark:shadow-slate-600 transition-all duration-300 ease-in-out">
+      <ul class="flex flex-col justify-center md:flex-row md:justify-between">
+        <li class="text-lg text-center md:p-0 p-5 border-b-2 dark:border-slate-700 border-slate-100 md:border-none group">
+          <a href="#home" class="hover:text-blue-500 dark:hover:text-blue-500 dark:text-white text-slate-500 font-medium">Home</a>
         </li>
-        <li class="text-lg text-center p-5 shadow-sm">
-          <a href="#about" class="hover:text-blue-500 text-slate-400 font-medium">About</a>
+        <li class="text-lg text-center md:p-0 p-5 border-b-2 dark:border-slate-700 border-slate-100 md:border-none">
+          <a href="#about" class="hover:text-blue-500 dark:hover:text-blue-500 dark:text-white text-slate-500 font-medium">About</a>
         </li>
-        <li class="text-lg text-center p-5 shadow-sm">
-          <a href="#Services" class="hover:text-blue-500 text-slate-400 font-medium">Services</a>
+        <li class="text-lg text-center md:p-0 p-5 border-b-2 dark:border-slate-700 border-slate-100 md:border-none">
+          <a href="#services" class="hover:text-blue-500 dark:hover:text-blue-500 dark:text-white text-slate-500 font-medium">Services</a>
         </li>
-        <li class="text-lg text-center p-5 shadow-sm">
-          <a href="#contact" class="hover:text-blue-500 text-slate-400 font-medium">Contact</a>
+        <li class="text-lg text-center md:p-0 p-5 md:border-none">
+          <a href="#contact" class="hover:text-blue-500 dark:hover:text-blue-500 dark:text-white text-slate-500 font-medium">Contact</a>
         </li>
       </ul>
     </nav>
@@ -42,11 +41,11 @@
 
   <!-- Hero section -->
   <section id="home" class="mt-16">
-    <div class="grid md:grid-cols-2 md:place-items-center px-6 md:px-20 py-28 gap-10">
+    <div class="bg-white dark:bg-slate-900 grid md:grid-cols-2 md:place-items-center px-6 md:px-20 py-28 gap-10">
       <!-- Description -->
       <div class="w-full space-y-10">
-        <h1 class="text-4xl lg:text-5xl text-center md:text-left font-bold text-slate-800">Mitra Pratama <span class="text-blue-500">Engineering</span></h1>
-        <p class="text-justify text-slate-700 text-xl md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit necessitatibus dolores, quaerat cupiditate impedit doloremque ea repellendus sint autem rem, iure deserunt minus voluptatibus.</p>
+        <h1 class="text-4xl lg:text-5xl text-center md:text-left font-bold text-slate-800 dark:text-white">Mitra Pratama <span class="text-blue-500">Engineering</span></h1>
+        <p class="text-justify dark:text-slate-300 text-slate-700 text-xl md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sit necessitatibus dolores, quaerat cupiditate impedit doloremque ea repellendus sint autem rem, iure deserunt minus voluptatibus.</p>
       </div>
 
       <!-- Image -->
@@ -76,90 +75,90 @@
   <!-- Section description-->
 
   <!-- Section description-->
-  <section id="services" class="px-6 md:px-20 py-28 bg-slate-800 ">
+  <section id="services" class="px-6 md:px-20 py-28 bg-white dark:bg-slate-900">
     <!-- title -->
     <div class="title flex justify-end">
-      <h4 class="text-4xl font-bold lg:text-5xl text-white"><i class="fa-solid fa-gears"></i> Services<span class="w-full h-2 bg-blue-500 block"></span></h4>
+      <h4 class="text-4xl font-bold lg:text-5xl text-slate-800 dark:text-white"><i class="fa-solid fa-gears"></i> Services<span class="w-full h-2 bg-blue-500 block"></span></h4>
     </div>
     <div class="grid grid-cols-1 place-items-center">
 
       <!-- Card content -->
-      <div class="space-y-10 mt-20">
-        <div class="bg-white rounded-lg w-full overflow-hidden md:grid md:grid-cols-[250px_1fr] lg:grid-cols-[350px_1fr] lg:w-[750px]">
+      <div class="space-y-10 card-hover mt-20 shadow-xl dark:shadow-lg dark:shadow-gray-600 dark:bg-slate-800 bg-white rounded-xl overflow-hidden">
+        <div class="w-full md:grid md:grid-cols-[250px_1fr] lg:grid-cols-[350px_1fr] lg:w-[750px]">
           <!-- Image -->
           <div class="max-w-full h-52 md:h-full bg-slate-100">
             <img src="" alt="card-services">
           </div>
           <!-- Description -->
           <div class="description px-6 py-10 space-y-3">
-            <div class="title mb-5"><h1 class="text-xl truncate md:text-2xl font-bold text-slate-800">Lorem, ipsum dolor. </h1></div>
+            <div class="title mb-5"><h1 class="text-xl truncate md:text-2xl font-bold text-slate-800 dark:text-white">Lorem, ipsum dolor. </h1></div>
             <div class="flex gap-2">
               <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-              <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="flex gap-2">
               <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-              <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="flex gap-2">
               <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-              <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         </div>
       </div>
 
-     <!-- Card content -->
-     <div class="space-y-10 mt-20">
-      <div class="bg-white rounded-lg w-full overflow-hidden md:grid md:grid-cols-[250px_1fr] lg:grid-cols-[350px_1fr] lg:w-[750px]">
-        <!-- Image -->
-        <div class="max-w-full h-52 md:h-full bg-slate-100">
-          <img src="" alt="card-services">
-        </div>
-        <!-- Description -->
-        <div class="description px-6 py-10 space-y-3">
-          <div class="title mb-5"><h1 class="text-xl truncate md:text-2xl font-bold text-slate-800">Lorem, ipsum dolor. </h1></div>
-          <div class="flex gap-2">
-            <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-            <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+      <!-- Card content -->
+      <div class="space-y-10 card-hover mt-20 shadow-xl dark:shadow-lg dark:shadow-gray-600 dark:bg-slate-800 bg-white rounded-xl overflow-hidden">
+        <div class="w-full md:grid md:grid-cols-[250px_1fr] lg:grid-cols-[350px_1fr] lg:w-[750px]">
+          <!-- Image -->
+          <div class="max-w-full h-52 md:h-full bg-slate-100">
+            <img src="" alt="card-services">
           </div>
-          <div class="flex gap-2">
-            <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-            <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="flex gap-2">
-            <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-            <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+          <!-- Description -->
+          <div class="description px-6 py-10 space-y-3">
+            <div class="title mb-5"><h1 class="text-xl truncate md:text-2xl font-bold text-slate-800 dark:text-white">Lorem, ipsum dolor. </h1></div>
+            <div class="flex gap-2">
+              <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="flex gap-2">
+              <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="flex gap-2">
+              <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Card content -->
-    <div class="space-y-10 mt-20">
-      <div class="bg-white rounded-lg w-full overflow-hidden md:grid md:grid-cols-[250px_1fr] lg:grid-cols-[350px_1fr] lg:w-[750px]">
-        <!-- Image -->
-        <div class="max-w-full h-52 md:h-full bg-slate-100">
-          <img src="" alt="card-services">
-        </div>
-        <!-- Description -->
-        <div class="description px-6 py-10 space-y-3">
-          <div class="title mb-5"><h1 class="text-xl truncate md:text-2xl font-bold text-slate-800">Lorem, ipsum dolor. </h1></div>
-          <div class="flex gap-2">
-            <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-            <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+      <!-- Card content -->
+      <div class="space-y-10 card-hover mt-20 shadow-xl dark:shadow-lg dark:shadow-gray-600 dark:bg-slate-800 bg-white rounded-xl overflow-hidden">
+        <div class="w-full md:grid md:grid-cols-[250px_1fr] lg:grid-cols-[350px_1fr] lg:w-[750px]">
+          <!-- Image -->
+          <div class="max-w-full h-52 md:h-full bg-slate-100">
+            <img src="" alt="card-services">
           </div>
-          <div class="flex gap-2">
-            <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-            <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="flex gap-2">
-            <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
-            <p class="text-slate-500 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+          <!-- Description -->
+          <div class="description px-6 py-10 space-y-3">
+            <div class="title mb-5"><h1 class="text-xl truncate md:text-2xl font-bold text-slate-800 dark:text-white">Lorem, ipsum dolor. </h1></div>
+            <div class="flex gap-2">
+              <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="flex gap-2">
+              <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="flex gap-2">
+              <i class="fa-solid fa-circle-check text-xl text-blue-500 md:pt-2"></i> 
+              <p class="text-slate-500 dark:text-slate-300 font-thin text-base md:text-lg">Lorem ipsum dolor sit amet.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
 
   </section>
@@ -181,43 +180,43 @@
   <!-- Section contact -->
 
   <!-- Section footer -->
-  <footer>
-    <div class="px-6 md:px-20 py-28">
+  <footer class="bg-white dark:bg-slate-900">
+    <div class="px-6 md:px-20 pt-28 pb-5">
       <div class="grid grid-cols-2 mb-16 md:mb-20">
         <div class="link">
-          <h4 class="text-lg md:text-2xl font-bold text-slate-800 mb-4">Company</h4>
+          <h4 class="text-lg md:text-2xl font-bold text-slate-800 dark:text-white mb-4">Company</h4>
           <ul class="space-y-2">
             <li>
-              <a href="" class="text-slate-500 md:text-xl hover:text-blue-500 hover:underline">About</a>
+              <a href="" class="text-slate-500 dark:text-slate-300 md:text-xl hover:text-blue-500 dark:hover:text-blue-500 hover:underline">About</a>
             </li>
             <li>
-              <a href="" class="text-slate-500 md:text-xl hover:text-blue-500 hover:underline">Services</a>
+              <a href="" class="text-slate-500 dark:text-slate-300 md:text-xl hover:text-blue-500 dark:hover:text-blue-500 hover:underline">Services</a>
             </li>
             <li>
-              <a href="" class="text-slate-500 md:text-xl hover:text-blue-500 hover:underline">Contact</a>
+              <a href="" class="text-slate-500 dark:text-slate-300 md:text-xl hover:text-blue-500 dark:hover:text-blue-500 hover:underline">Contact</a>
             </li>
           </ul>
         </div>
         <div class="link">
-          <h4 class="text-lg  md:text-2xl font-bold text-slate-800 mb-4">Sosial</h4>
+          <h4 class="text-lg md:text-2xl font-bold text-slate-800 dark:text-white mb-4">Sosial</h4>
           <ul class="space-y-2">
             <li>
-              <a href="" class="text-slate-500 md:text-xl hover:text-blue-500 hover:underline">Instagram</a>
+              <a href="" class="text-slate-500 dark:text-slate-300 dark:hover:text-blue-500 md:text-xl hover:text-blue-500 hover:underline">Instagram</a>
             </li>
             <li>
-              <a href="" class="text-slate-500 md:text-xl hover:text-blue-500 hover:underline">Facebook</a>
+              <a href="" class="text-slate-500 dark:text-slate-300 dark:hover:text-blue-500 md:text-xl hover:text-blue-500 hover:underline">Facebook</a>
             </li>
           </ul>
         </div>
       </div>
       <hr>
-      <div id="watermark" class="mt-16 md:mt-20">
+      <div id="watermark" class="mt-5 md:mt-10">
         <div id="logo" class="flex flex-col items-center space-y-3">
           <h4 class="text-base text-center font-bold text-slate-800 flex items-center gap-1">
             <img src="dist/img/logo-mini.png" class="w-10 md:w-20 mr-3" alt="mpe-log">
-            <p class="text-base md:text-2xl">Mitra Pratama<span class="text-blue-500 ml-2">Engineering</span></p>
+            <p class="text-base md:text-2xl dark:text-white">Mitra Pratama<span class="text-blue-500 ml-2">Engineering</span></p>
           </h4>
-          <span class="text-xs md:text-md font-thin text-slate-500">© 2023 Sangkuriang project™. Built with Tailwind CSS.</span>
+          <span class="text-xs md:text-md font-thin text-slate-500 dark:text-slate-300">© 2023 Sangkuriang project™. Built with Tailwind CSS.</span>
         </div>
       </div>
       <!-- Watermark -->
