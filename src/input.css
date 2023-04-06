@@ -5,3 +5,7 @@
 * {
   @apply font-poppins;
 }
+
+.nactive {
+  @apply left-0;
+}
